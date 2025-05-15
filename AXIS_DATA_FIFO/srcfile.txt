@@ -1,11 +1,10 @@
 F:/ASIC_IC_Design/Async_fifo/bit_sync.sv
 F:/ASIC_IC_Design/Async_fifo/fifi_mem.sv
-F:/ASIC_IC_Design/Async_fifo/fifo_axis_wraper.sv
 F:/ASIC_IC_Design/Async_fifo/fifo_rl.sv
 F:/ASIC_IC_Design/Async_fifo/fifo_tb.sv
 F:/ASIC_IC_Design/Async_fifo/G2B.sv
 F:/ASIC_IC_Design/Async_fifo/fifo_wl.sv
 F:/ASIC_IC_Design/Async_fifo/fifo_top.sv
-F:/ASIC_IC_Design/Async_fifo/fifo_axis_wraper.sv
+F:/ASIC_IC_Design/Async_fifo/axis_data_fifo.sv
 F:/ASIC_IC_Design/Async_fifo/data_fifo_tb.sv
 
