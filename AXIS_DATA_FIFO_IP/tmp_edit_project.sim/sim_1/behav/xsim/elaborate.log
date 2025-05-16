@@ -1,0 +1,27 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ff52dc9a9be34400bdddbc4b1d72fc6c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot data_fifo_tb_behav xil_defaultlib.data_fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/axis_data_fifo.sv" Line 1. Module AXIS_DATA_FIFO(FIFO_DEPTH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_top.sv" Line 1. Module fifo_top(FIFO_DEPTH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifi_mem.sv" Line 1. Module fifo_mem(FIFO_DEPTH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_rl.sv" Line 1. Module fifo_rl(FIFO_DEPTH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/G2B.sv" Line 1. Module G2B(BIT_WIDTH=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_wl.sv" Line 1. Module fifo_wl(FIFO_DEPTH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/bit_sync.sv" Line 1. Module bit_sync(FIFO_DEPTH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/bit_sync.sv" Line 1. Module bit_sync(FIFO_DEPTH=256) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fifo_mem(FIFO_DEPTH=256)
+Compiling module xil_defaultlib.fifo_rl(FIFO_DEPTH=256)
+Compiling module xil_defaultlib.G2B(BIT_WIDTH=9)
+Compiling module xil_defaultlib.fifo_wl(FIFO_DEPTH=256)
+Compiling module xil_defaultlib.bit_sync(FIFO_DEPTH=256)
+Compiling module xil_defaultlib.fifo_top(FIFO_DEPTH=256)
+Compiling module xil_defaultlib.AXIS_DATA_FIFO(FIFO_DEPTH=256)
+Compiling module xil_defaultlib.data_fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot data_fifo_tb_behav

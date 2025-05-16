@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../src/G2B.sv" \
+"../../../../src/axis_data_fifo.sv" \
+"../../../../src/bit_sync.sv" \
+"../../../../src/fifi_mem.sv" \
+"../../../../src/fifo_rl.sv" \
+"../../../../src/fifo_top.sv" \
+"../../../../src/fifo_wl.sv" \
+"../../../../sim/data_fifo_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

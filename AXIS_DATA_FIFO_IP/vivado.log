@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 16 17:55:19 2025
+# Process ID: 15396
+# Current directory: F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4968 F:\Git_Hub\IC_Design_pro\AXIS_DATA_FIFO_IP\tmp_edit_project.xpr
+# Log file: F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/vivado.log
+# Journal file: F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/tmp_edit_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 840.387 ; gain = 138.895
+update_compile_order -fileset sources_1

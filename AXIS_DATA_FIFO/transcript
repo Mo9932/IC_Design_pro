@@ -1,0 +1,270 @@
+# Reading pref.tcl
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:15:25 on May 16,2025
+# vlog -reportprogress 300 -f srcfile.txt 
+# -- Compiling module bit_sync
+# -- Compiling module fifo_mem
+# -- Compiling module fifo_rl
+# -- Compiling module fifo_tb
+# -- Compiling module G2B
+# -- Compiling module fifo_wl
+# -- Compiling module fifo_top
+# -- Compiling module AXIS_DATA_FIFO
+# -- Compiling module data_fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# 	AXIS_DATA_FIFO
+# 	data_fifo_tb
+# End time: 17:15:26 on May 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" data_fifo_tb 
+# Start time: 17:15:26 on May 16,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Error: F:/ASIC_IC_Design/Async_fifo/data_fifo_tb.sv(26): Module 'AXI_DATA_FIFO' is not defined.
+#  For instance 'DUT' at path 'data_fifo_tb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 4
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:16:08 on May 16,2025
+# vlog -reportprogress 300 -f srcfile.txt 
+# -- Compiling module bit_sync
+# -- Compiling module fifo_mem
+# -- Compiling module fifo_rl
+# -- Compiling module fifo_tb
+# -- Compiling module G2B
+# -- Compiling module fifo_wl
+# -- Compiling module fifo_top
+# -- Compiling module AXIS_DATA_FIFO
+# -- Compiling module data_fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# 	AXIS_DATA_FIFO
+# 	data_fifo_tb
+# End time: 17:16:08 on May 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" data_fifo_tb 
+# Start time: 17:15:26 on May 16,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Error: F:/ASIC_IC_Design/Async_fifo/data_fifo_tb.sv(26): Module 'AXI_DATA_FIFO' is not defined.
+#  For instance 'DUT' at path 'data_fifo_tb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 4
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:16:47 on May 16,2025
+# vlog -reportprogress 300 -f srcfile.txt 
+# -- Compiling module bit_sync
+# -- Compiling module fifo_mem
+# -- Compiling module fifo_rl
+# -- Compiling module fifo_tb
+# -- Compiling module G2B
+# -- Compiling module fifo_wl
+# -- Compiling module fifo_top
+# -- Compiling module AXIS_DATA_FIFO
+# -- Compiling module data_fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# 	AXIS_DATA_FIFO
+# 	data_fifo_tb
+# End time: 17:16:47 on May 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" data_fifo_tb 
+# Start time: 17:15:26 on May 16,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Error: F:/ASIC_IC_Design/Async_fifo/data_fifo_tb.sv(26): Module 'AXI_DATA_FIFO' is not defined.
+#  For instance 'DUT' at path 'data_fifo_tb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=3, Warnings=3.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 4
+do run.do
+# ** Error: (vlog-7) Failed to open -f file "srcfile.txt" in read mode.
+# No such file or directory. (errno = ENOENT)
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:19:25 on May 16,2025
+# vlog -reportprogress 300 -f srcfile.txt 
+# End time: 17:19:25 on May 16,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_2024.1/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_2024.1/win64/vlog failed.
+#     while executing
+# "vlog -f srcfile.txt"
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:19:50 on May 16,2025
+# vlog -reportprogress 300 -f src_file.txt 
+# -- Compiling module AXIS_DATA_FIFO
+# -- Compiling module bit_sync
+# -- Compiling module data_fifo_tb
+# -- Compiling module fifo_mem
+# -- Compiling module fifo_rl
+# -- Compiling module fifo_tb
+# -- Compiling module fifo_top
+# -- Compiling module fifo_wl
+# -- Compiling module G2B
+# 
+# Top level modules:
+# 	data_fifo_tb
+# 	fifo_tb
+# End time: 17:19:50 on May 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" data_fifo_tb 
+# Start time: 17:15:26 on May 16,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=4, Warnings=4.
+# Loading sv_std.std
+# Loading work.data_fifo_tb(fast)
+# Loading work.AXIS_DATA_FIFO(fast)
+# Loading work.fifo_top(fast)
+# Loading work.fifo_mem(fast)
+# Loading work.fifo_rl(fast)
+# Loading work.G2B(fast)
+# Loading work.fifo_wl(fast)
+# Loading work.bit_sync(fast)
+run -all
+# correct data is 254, and currupted data is 0
+# ** Note: $stop    : F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO/data_fifo_tb.sv(75)
+#    Time: 10504 ns  Iteration: 1  Instance: /data_fifo_tb
+# Break in Module data_fifo_tb at F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO/data_fifo_tb.sv line 75
+vlog data_fifo_tb.sv
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:21:42 on May 16,2025
+# vlog -reportprogress 300 data_fifo_tb.sv 
+# -- Compiling module data_fifo_tb
+# 
+# Top level modules:
+# 	data_fifo_tb
+# End time: 17:21:43 on May 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart 
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.data_fifo_tb(fast)
+# Loading work.AXIS_DATA_FIFO(fast)
+# Loading work.fifo_top(fast)
+# Loading work.fifo_mem(fast)
+# Loading work.fifo_rl(fast)
+# Loading work.G2B(fast)
+# Loading work.fifo_wl(fast)
+# Loading work.bit_sync(fast)
+run -all
+# correct data is 0, and currupted data is 256
+# ** Note: $stop    : data_fifo_tb.sv(75)
+#    Time: 10556 ns  Iteration: 1  Instance: /data_fifo_tb
+# Break in Module data_fifo_tb at data_fifo_tb.sv line 75
+add wave -position insertpoint sim:/data_fifo_tb/DUT/FIFO/*
+restart 
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.data_fifo_tb(fast)
+# Loading work.AXIS_DATA_FIFO(fast)
+# Loading work.fifo_top(fast)
+# Loading work.fifo_mem(fast)
+# Loading work.fifo_rl(fast)
+# Loading work.G2B(fast)
+# Loading work.fifo_wl(fast)
+# Loading work.bit_sync(fast)
+run -all
+# correct data is 0, and currupted data is 256
+# ** Note: $stop    : data_fifo_tb.sv(75)
+#    Time: 10556 ns  Iteration: 1  Instance: /data_fifo_tb
+# Break in Module data_fifo_tb at data_fifo_tb.sv line 75
+add wave -position insertpoint  \
+sim:/data_fifo_tb/DUT/FIFO/FIFO_WR_LOGIC/wptr
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.data_fifo_tb(fast)
+# Loading work.AXIS_DATA_FIFO(fast)
+# Loading work.fifo_top(fast)
+# Loading work.fifo_mem(fast)
+# Loading work.fifo_rl(fast)
+# Loading work.G2B(fast)
+# Loading work.fifo_wl(fast)
+# Loading work.bit_sync(fast)
+run
+run
+run
+run
+vlog fifo_wl.sv
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:28:53 on May 16,2025
+# vlog -reportprogress 300 fifo_wl.sv 
+# -- Compiling module fifo_wl
+# 
+# Top level modules:
+# 	fifo_wl
+# End time: 17:28:53 on May 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart 
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.data_fifo_tb(fast)
+# Loading work.AXIS_DATA_FIFO(fast)
+# Loading work.fifo_top(fast)
+# Loading work.fifo_mem(fast)
+# Loading work.fifo_rl(fast)
+# Loading work.G2B(fast)
+# Loading work.fifo_wl(fast)
+# Loading work.bit_sync(fast)
+run -all
+# correct data is 0, and currupted data is 256
+# ** Note: $stop    : data_fifo_tb.sv(75)
+#    Time: 10556 ns  Iteration: 1  Instance: /data_fifo_tb
+# Break in Module data_fifo_tb at data_fifo_tb.sv line 75
+# End time: 17:51:27 on May 16,2025, Elapsed time: 0:36:01
+# Errors: 0, Warnings: 1

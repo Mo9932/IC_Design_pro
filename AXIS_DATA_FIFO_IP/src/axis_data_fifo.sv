@@ -1,7 +1,7 @@
 module AXIS_DATA_FIFO #(
-    parameter FIFO_DEPTH = 8 ,
-    parameter FIFO_WIDTH = 8 ,
-    parameter SYNC_STAGES = 2
+    parameter FIFO_DEPTH = 16 ,
+    parameter FIFO_WIDTH = 32 ,
+     parameter SYNC_STAGES = 2
 ) (
     /* MASTER AXIS INTERFACE */
         input logic m_axis_rst_n ,

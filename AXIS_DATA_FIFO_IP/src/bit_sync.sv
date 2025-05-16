@@ -9,10 +9,9 @@ module bit_sync #(
 );
 
     (* ASYNC_REG = "TRUE" *) 
-    (* DONT_TOUCH = "TRUE" *) 
-    reg [$clog2(FIFO_DEPTH):0] sync_reg [NUM_STG];
+    reg [$clog2(FIFO_DEPTH):0] sync_reg [NUM_STG-1:0];
 
-    always_ff @( posedge clk ) begin 
+    always_ff @( posedge clk or negedge rst_n ) begin 
         if(!rst_n)begin
             for (int i = 0 ; i< NUM_STG ; i++ ) begin
                 sync_reg[i] <= '0;
@@ -23,9 +22,8 @@ module bit_sync #(
             for (int i = 0 ; i< NUM_STG-1 ; i++ ) begin
                 sync_reg[i+1] <= sync_reg[i];
             end
+            bit_sync <= sync_reg[NUM_STG-1];
         end
     end
-
-    assign  bit_sync = sync_reg[NUM_STG-1];
 
 endmodule

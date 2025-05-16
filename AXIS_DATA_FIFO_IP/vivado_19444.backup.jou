@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 16 17:31:10 2025
+# Process ID: 19444
+# Current directory: F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16468 F:\Git_Hub\IC_Design_pro\AXIS_DATA_FIFO_IP\tmp_edit_project.xpr
+# Log file: F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/vivado.log
+# Journal file: F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/tmp_edit_project.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {F:\ASIC_IC_Design\Async_fifo_ip\component.xml}
+export_ip_user_files -of_objects  [get_files F:/ASIC_IC_Design/Async_fifo_ip/component.xml] -no_script -reset -force -quiet
+remove_files  F:/ASIC_IC_Design/Async_fifo_ip/component.xml
+export_ip_user_files -of_objects  [get_files F:/ASIC_IC_Design/Async_fifo_ip/src/axis_data_fifo.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/ASIC_IC_Design/Async_fifo_ip/src/fifo_top.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/ASIC_IC_Design/Async_fifo_ip/src/fifi_mem.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/ASIC_IC_Design/Async_fifo_ip/src/fifo_rl.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/ASIC_IC_Design/Async_fifo_ip/src/fifo_wl.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files F:/ASIC_IC_Design/Async_fifo_ip/src/bit_sync.sv] -no_script -reset -force -quiet
+remove_files  {F:/ASIC_IC_Design/Async_fifo_ip/src/axis_data_fifo.sv F:/ASIC_IC_Design/Async_fifo_ip/src/fifo_top.sv F:/ASIC_IC_Design/Async_fifo_ip/src/fifi_mem.sv F:/ASIC_IC_Design/Async_fifo_ip/src/fifo_rl.sv F:/ASIC_IC_Design/Async_fifo_ip/src/fifo_wl.sv F:/ASIC_IC_Design/Async_fifo_ip/src/bit_sync.sv}
+export_ip_user_files -of_objects  [get_files F:/ASIC_IC_Design/Async_fifo_ip/src/data_fifo_tb.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/ASIC_IC_Design/Async_fifo_ip/src/data_fifo_tb.sv
+export_ip_user_files -of_objects  [get_files F:/ASIC_IC_Design/Async_fifo_ip/src/G2B.sv] -no_script -reset -force -quiet
+remove_files  F:/ASIC_IC_Design/Async_fifo_ip/src/G2B.sv
+add_files {F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/bit_sync.sv F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifi_mem.sv F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_top.sv F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_rl.sv F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/G2B.sv F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/axis_data_fifo.sv F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_wl.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::unload_core f:/ASIC_IC_Design/Async_fifo_ip/component.xml
+ipx::package_project -root_dir F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core f:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP f:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/component.xml
+ipx::open_ipxact_file {f:\Git_Hub\IC_Design_pro\AXIS_DATA_FIFO_IP\component.xml}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/sim/data_fifo_tb.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::add_user_parameter SYNC_STAGES [ipx::current_core]
+set_property value_resolve_type user [ipx::get_user_parameters SYNC_STAGES -of_objects [ipx::current_core]]
+ipgui::add_param -name {SYNC_STAGES} -component [ipx::current_core]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "SYNC_STAGES" -component [ipx::current_core] ]
+set_property value_validation_type range_long [ipx::get_user_parameters SYNC_STAGES -of_objects [ipx::current_core]]
+set_property value_validation_range_minimum 2 [ipx::get_user_parameters SYNC_STAGES -of_objects [ipx::current_core]]
+set_property value_validation_range_maximum 4 [ipx::get_user_parameters SYNC_STAGES -of_objects [ipx::current_core]]
+export_ip_user_files -of_objects  [get_files F:/ASIC_IC_Design/Async_fifo_ip/src/comst_1.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 F:/ASIC_IC_Design/Async_fifo_ip/src/comst_1.xdc
+add_files -fileset constrs_1 -norecurse F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/comst_1.xdc
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  f:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP [current_project]
+update_ip_catalog
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/data_fifo_tb_behav.wcfg
+source data_fifo_tb.tcl
+run 1000 ns
+current_wave_config {data_fifo_tb_behav.wcfg}
+add_wave {{/data_fifo_tb}} 
+relaunch_sim
+relaunch_sim
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+run 10000 ns
+save_wave_config {F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/data_fifo_tb_behav.wcfg}
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path f:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP
+close_sim

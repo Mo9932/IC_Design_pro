@@ -18,9 +18,9 @@ module data_fifo_tb (
 
     int correct =0 , error = 0 ;
 
-    reg [31:0]mem_test[256]; // to test the output when reading
+    bit [31:0]mem_test[256]; // to test the output when reading
 
-    AXI_DATA_FIFO #(
+    AXIS_DATA_FIFO #(
         .FIFO_DEPTH (256) ,
         .FIFO_WIDTH (32)
     ) DUT (.*);
@@ -47,10 +47,10 @@ module data_fifo_tb (
         
         /*start write only test */
         s_axis_tvalid = 1 ;
-        for(int i = 0 ; i< 256 ; i++)begin
+        for(int i = 0 ; i< 260 ; i++)begin
             @(negedge s_axis_clk);
             if(s_axis_tready)begin
-                s_axis_tdata = $random();
+                s_axis_tdata = i;
                 mem_test[i] = s_axis_tdata; 
             end
         end

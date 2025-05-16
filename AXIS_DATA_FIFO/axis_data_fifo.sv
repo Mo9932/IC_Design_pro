@@ -1,4 +1,4 @@
-module AXI_DATA_FIFO #(
+module AXIS_DATA_FIFO #(
     parameter FIFO_DEPTH = 16 ,
     parameter FIFO_WIDTH = 32
 ) (

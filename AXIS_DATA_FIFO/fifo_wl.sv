@@ -14,8 +14,6 @@ module fifo_wl #(
     output   logic   full 
 );
 
-    wire [$clog2(FIFO_DEPTH):0]rptr ;
-
     reg [$clog2(FIFO_DEPTH):0]wptr ;
 
 
@@ -30,14 +28,8 @@ module fifo_wl #(
 
     assign wptr2rl = (wptr >> 1) ^ wptr; // convert form binary to gray
 
-    G2B #( 
-        .BIT_WIDTH($clog2(FIFO_DEPTH)+1)
-    ) U (
-        .g_in(rptr2wl),
-        .b_out(rptr)
-    );
 
-    assign full = ((rptr[$clog2(FIFO_DEPTH)-1:0] == wptr[$clog2(FIFO_DEPTH)-1:0]) && (rptr[$clog2(FIFO_DEPTH)-1] != wptr[$clog2(FIFO_DEPTH)-1]))? 1 : 0 ;
+    assign full = ((rptr2wl[$clog2(FIFO_DEPTH)-1:0] == wptr[$clog2(FIFO_DEPTH)-1:0]) && (rptr2wl[$clog2(FIFO_DEPTH)] != wptr[$clog2(FIFO_DEPTH)]))? 1 : 0 ;
 
     assign w_addr = wptr[$clog2(FIFO_DEPTH)-1:0] ;
     

@@ -1,0 +1,13 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/sim/data_fifo_tb.sv,1747410621,systemVerilog,,,,data_fifo_tb,,,,,,,,
+F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/G2B.sv,1747262320,systemVerilog,,F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/axis_data_fifo.sv,,G2B,,,,,,,,
+F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/axis_data_fifo.sv,1747409925,systemVerilog,,F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/bit_sync.sv,,AXIS_DATA_FIFO,,,,,,,,
+F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/bit_sync.sv,1747250615,systemVerilog,,F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifi_mem.sv,,bit_sync,,,,,,,,
+F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifi_mem.sv,1747262443,systemVerilog,,F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_rl.sv,,fifo_mem,,,,,,,,
+F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_rl.sv,1747262938,systemVerilog,,F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_top.sv,,fifo_rl,,,,,,,,
+F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_top.sv,1747409927,systemVerilog,,F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_wl.sv,,fifo_top,,,,,,,,
+F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/src/fifo_wl.sv,1747409319,systemVerilog,,F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/sim/data_fifo_tb.sv,,fifo_wl,,,,,,,,
+F:/Git_Hub/IC_Design_pro/AXIS_DATA_FIFO_IP/tmp_edit_project.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,

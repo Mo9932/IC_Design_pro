@@ -22,21 +22,22 @@ module fifo_top #(
     wire [$clog2(FIFO_DEPTH):0] wptr2rl;
     wire [$clog2(FIFO_DEPTH):0] rptr2wl_sync;
     wire [$clog2(FIFO_DEPTH):0] rptr2wl;
+    wire [$clog2(FIFO_DEPTH):0] rptr;
 
     fifo_mem #(
         .FIFO_DEPTH (FIFO_DEPTH),
         .FIFO_WIDTH (FIFO_WIDTH)
 
     ) FIFO_MEM (
-        .wr_clk  (wr_clk ),
-        .rst_n  (wr_rst_n),
-        .full   (full  ),
-        .empty  (empty ),
-        .w_en   (wr_en ),
-        .w_addr (w_addr),
-        .w_data (wr_data),
-        .r_addr (r_addr),
-        .r_data (rd_data)
+        .wr_clk     (wr_clk     ),
+        .rst_n      (wr_rst_n   ),
+        .full       (full       ),
+        .empty      (empty      ),
+        .w_en       (wr_en      ),
+        .w_addr     (w_addr     ),
+        .w_data     (wr_data    ),
+        .r_addr     (r_addr     ),
+        .r_data     (rd_data    )
     );
 
     fifo_rl #(
@@ -50,7 +51,14 @@ module fifo_top #(
         .wptr2rl    (wptr2rl_sync),
         .rptr2wl    (rptr2wl    ),
         .r_addr     (r_addr     ),
-        .empty     (empty      ) 
+        .empty      (empty      ) 
+    );
+
+    G2B #( 
+        .BIT_WIDTH($clog2(FIFO_DEPTH)+1)
+    ) U (
+        .g_in(rptr2wl_sync),
+        .b_out(rptr)
     );
 
     fifo_wl #(
@@ -60,7 +68,7 @@ module fifo_top #(
         .w_clk      (wr_clk     ),
         .rst_n      (wr_rst_n   ),
         .wr_en      (wr_en      ),
-        .rptr2wl    (rptr2wl_sync),
+        .rptr2wl    (rptr       ),
         .w_addr     (w_addr     ),
         .wptr2rl    (wptr2rl    ),
         .full       (full)
